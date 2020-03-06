@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marks List</title>
+</head>
+<body>
+    <table align="center" border="2">
+        <tr>
+            <th>IDNO</th>
+            <th>NAME</th>
+            <th>CLASS</th>
+            <th>MARKS</th>
+            <th>TOTAL</th>
+
+        </tr>
+        {% for x,y in data.items %}
+        <tr>
+            <td>{{ x }}</td>
+            <td>{{ y.name}}</td>
+            <td>{{ y.class }}</td>
+            <td>{{ y.marks }}</td>
+
+        </tr>
+        {% end of %}
+
+    </table>
+</body>
+</html>

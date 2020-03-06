@@ -1,0 +1,37 @@
+<html>
+    <body>
+    <form action="/mes/" method="post">
+        {% csrf_token %}
+        <table align="center" border="2">
+            <tr>
+                <td>
+                  <h3>name:{{na}}</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>age:{{ag}}</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <h3>contact no:{{cont}}</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <h3>Email-id:{{ema}}</h3>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                  <button type="submit">Confirm</button>
+                </th>
+            </tr>
+
+        </table>
+    </form>
+
+    </body>
+</html>

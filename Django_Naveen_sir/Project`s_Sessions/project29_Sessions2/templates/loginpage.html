@@ -1,0 +1,24 @@
+<html>
+<body>
+<form method="post" action="{% url 'verify'%}">
+    {% csrf_token %}
+    <table align="center">
+        <tr>
+            <th colspan="2">Login Page</th>
+        </tr>
+        <tr>
+            <td><label>Username</label></td>
+            <td><input type="text" required name="un"></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" required name="up"></td>
+        </tr>
+        <tr>
+            <th><button type="submit">Submit</button> </th>
+        </tr>
+    </table>
+    </form>
+    {{ message }}
+</body>
+</html>

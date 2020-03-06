@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Login Page
+    </title>
+
+</head>
+<body>
+<form method="post" action="/details/">
+    {% csrf_token %}
+    <table align="center">
+        <tr><th colspan="2"><h2>Fill TO Login</h2></th></tr>
+        <tr>
+            <th>Username:</th>
+            <th><input type="text" autofocus required name="username"></th>
+        </tr>
+        <tr>
+            <th>Password:</th>
+            <th> <input type="password" autofocus required name="password"></th>
+        </tr>
+        <tr>
+            <th colspan="2"><button type="submit"> Submit</button></th>
+        </tr>
+
+
+    </table>
+</form>
+
+{{ res }}
+</body>
+</html>

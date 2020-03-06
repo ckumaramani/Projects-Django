@@ -1,0 +1,65 @@
+{% include 'reuse.html' %}
+<style>
+    table{
+        background-color: lightsalmon;
+        border-radius: 15px;
+        box-shadow: 0 0 10px black;
+
+    }
+    td,th,tr{
+        padding: 15px 25px;
+    }
+</style>
+
+<h2 style=" text-align: center; font-size: 40px; color: orangered;" >Employee`s Details</h2>
+<strong>
+<table align="center" >;
+
+
+    <tr style="background-color: grey; font-size: 15px; color: white">
+        <th width="120">IDNO</th>
+        <th width="120">NAME</th>
+        <th width="120">DESIGNATION</th>
+        <th width="120">SALARY</th>
+        <th width="120">CONTACT NO</th>
+        <th width="120">USERNAME</th>
+        <th width="120">PASSWORD</th>
+        <th width="120">IMAGE</th>
+        <th width="120">DELETE</th>
+        <th width="120">UPDATE</th>
+    </tr>
+    {% for x in data %}
+    <tr>
+        <th>
+            {{ x.idno }}</th>
+        <th>{{ x.name }}</th>
+        <th>{{ x.designation }}</th>
+        <th>{{ x.salary }}</th>
+        <th>{{ x.contactno }}</th>
+        <th>{{ x.username }}</th>
+        <th>{{ x.password }}</th>
+        <th><img src="{{ x.image.url }}" width="150" height="150"></th>
+        <th>
+            <form action="/delete{{ x.idno }}/">
+                {% csrf_token %}
+
+            <button type="submit" class="btn btn-info">Yes</button>
+         </form></th>
+        <th>
+            <form action="/update{{ x.idno }}/">
+                 <button type="submit" class="btn btn-info">Yes</button>
+            </form></th>
+    </tr>
+    {% endfor %}
+</table>
+</strong>
+
+<footer style="text-align: center">
+    <h2>
+        Copyright &copy; 2016-2022
+    </h2>
+    <h3>All Rights reserved</h3>
+    <h6>
+        Site maintained By <a href="">Arjunmajeti</a>
+    </h6>
+</footer>

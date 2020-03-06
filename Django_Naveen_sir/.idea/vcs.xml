@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GitSharedSettings">
+    <option name="FORCE_PUSH_PROHIBITED_PATTERNS">
+      <list>
+        <option value="Arjun" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/0_HTML in Django class/html/Website" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Django_Naveen sir/HTML in Django class/html/Website" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HTML in Django class/html/Website" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/html/Website" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            All Staff Detail`s
+        </title>
+    </head>
+    <body>
+    <table align=" center">
+        <tr>
+            <th width="100">IDNO</th>
+            <th width="100">NAME</th>
+            <th width="100">SALARY</th>
+            <th width="100">UPDATE</th>
+            <th width="100">DELETE</th>
+        </tr>
+        {% for x in data %}
+            <tr>
+            <th>{{ x.idno }}</th>
+            <th>{{ x.name }}</th>
+            <th>{{ x.salary }}</th>
+            <th width="100">
+                <form action="/update/" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="id" {{ x.idno }}>
+                    <button type="submit">yes</button>
+                </form>
+            </th>
+            </tr>
+        {% endfor %}
+
+    </table>
+    </body>
+</html>

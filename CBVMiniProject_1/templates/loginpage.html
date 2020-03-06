@@ -1,0 +1,84 @@
+{% include 'reuse.html' %}
+<style>
+    section{
+        alignment: center
+    ;
+    }
+    .login{
+        alignment: center;
+     padding: 25px;
+     border-radius: 15px;
+     box-shadow: 0 0 15px black;
+     margin: 15px;
+ }
+    section{
+        display:inline-block;
+        background-color: lawngreen;
+        alignment: center;
+        padding: 150px;
+
+
+    }
+    div{
+        display: inline-block;
+        width: 100%;
+        margin: 5px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px black;
+        padding: 15px 25px;
+    }
+</style>
+
+
+
+<!--New LOgin page Separations--->
+<div>
+<form action="/AdminLoginpage/" method="post">
+    {% csrf_token %}
+<section class="login">
+    <h2 style="color: orangered">--->For Admin</h2>
+    <h3>Click Here To Login  <button type="submit" class="btn btn-info">Login Page</button></h3>
+</section>
+</form>
+    <strong><span style="font-size: 25px; font-style: italic; color: teal">
+    "For Admin Login page"</span> </strong>dolor sit amet, consectetur adipisicing elit. A ad adipisci, corporis delectus et, excepturi illo
+        illum ipsam nam, pariatur perferendis recusandae reprehenderit unde! Animi fuga fugit inventore sequi
+        voluptatibus.
+
+    Consequuntur cumque, eligendi fugiat inventore nobis omnis quibusdam vitae. Consequuntur dolorem excepturi fuga
+        inventore optio. Consequatur debitis eos eum nulla obcaecati reprehenderit saepe sint. Animi distinctio illo
+        impedit numquam odit!
+</div>
+
+<div>
+<form action="/EmployeeLoginPage/" method="post">
+    {% csrf_token %}
+<section class="login">
+    <h2 style="color: orangered">--->For Employee</h2>
+    <h3>Click Here To Login   <button type="submit" class="btn btn-info"> Login Page</button></h3>
+
+</section>
+    </form>
+ <strong><span style="font-size: 25px; font-style: italic; color: teal">
+    "For Employee Login page"</span> </strong>dolor sit amet, consectetur adipisicing elit. A ad adipisci, corporis delectus et, excepturi illo
+        illum ipsam nam, pariatur perferendis recusandae reprehenderit unde! Animi fuga fugit inventore sequi
+        voluptatibus.
+
+    Consequuntur cumque, eligendi fugiat inventore nobis omnis quibusdam vitae. Consequuntur dolorem excepturi fuga
+        inventore optio. Consequatur debitis eos eum nulla obcaecati reprehenderit saepe sint. Animi distinctio illo
+        impedit numquam odit!
+</div>
+
+
+
+
+
+<footer style="text-align: center">
+    <h2>
+        Copyright &copy; 2016-2022
+    </h2>
+    <h3>All Rights reserved</h3>
+    <h6>
+        Site maintained By <a href="">Arjunmajeti</a>
+    </h6>
+</footer>

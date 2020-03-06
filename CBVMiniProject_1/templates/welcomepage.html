@@ -1,0 +1,78 @@
+{% include 'reuse.html' %}
+<style>
+    .Employee {
+        width: 600px;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px black;
+        margin: 10px;
+
+    }
+
+    #rr {
+        float: right;
+    }
+</style>
+<h1>Naga Sai Group Of Companies</h1>
+<h2 style="text-align: center">Welocme to Admin Page</h2>
+<h4 style="text-align: center; color: orangered ">Admin Name : <span
+        style="font-style: italic; color: saddlebrown">{{ name }} </span></h4>
+
+<table align="right">
+    <tr>
+        <th>
+            <form action="/logout/" method="post">{% csrf_token %}
+                <button id="rr" type="submit" class="btn btn-primary">Logout</button>
+            </form>
+        </th>
+    </tr>
+</table>
+<br>
+<br>
+<div> <span style="color: teal; font-style: italic; font-size: 25px">Welcome </span> <span
+        style="color: lawngreen; font-style: italic; font-size: 25px">"{{ name }}"</span> dolor sit amet, consectetur
+    adipisicing elit. Ad corporis cum error exercitationem illo mollitia
+    officiis perferendis ullam voluptatibus? Asperiores doloribus expedita iste iusto nobis quasi recusandae, reiciendis
+    velit vero.
+</div>
+<div>A at dolores enim illo perferendis quia ullam. Est excepturi facilis hic libero magni maxime necessitatibus, nemo
+    obcaecati perspiciatis repellendus tenetur velit! Animi aspernatur eveniet laudantium mollitia nihil recusandae
+    reiciendis!
+</div>
+<div>Assumenda at, dicta esse fugit iste numquam quis veniam. Aut culpa delectus eum eveniet iure, labore libero minus
+    nemo nisi nobis officia quibusdam repellat repudiandae sequi tempore temporibus voluptate. Quis!
+</div>
+<!---Logout Button---->
+
+
+<!---Add New Employee Button---->
+<section class="Employee">
+    <h2 style="color: chocolate">---->Click Here To Add New Employee</h2>
+    <form action="/register/" method="post">
+        {% csrf_token %}
+        <button style="alignment: center" type="submit" class="btn btn-primary">Add New Employee</button>
+    </form>
+
+</section>
+
+<!---View All Employee Button---->
+<section class="Employee">
+
+    <h2 style="color: chocolate">---->Click Here To View All Employee</h2>
+
+    <form action="/viewall/" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-info">View All Employee`s</button>
+    </form>
+</section>
+
+
+<footer style="text-align: center">
+    <h2>
+        Copyright &copy; 2016-2022
+    </h2>
+    <h3>All Rights reserved</h3>
+    <h6>
+        Site maintained By <a href="">Arjunmajeti</a>
+    </h6>
+</footer>

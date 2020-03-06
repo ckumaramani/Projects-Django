@@ -1,0 +1,42 @@
+{% include "reuse.html" %}
+<style>
+    footer{
+        text-align: center;
+    }
+    table{
+        background-color: chocolate;
+
+        border-radius: 20px;
+        padding: 15px;
+        box-shadow: 0 0 10px black;
+    }
+
+</style>
+<h2>Welcome TO About us Page</h2>
+
+<section>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio id libero, natus provident sint voluptatibus! Assumenda error expedita iste minus repellendus velit! Aspernatur autem blanditiis, corporis culpa debitis distinctio dolorum eligendi exercitationem harum molestiae perferendis, ratione repudiandae sed sit voluptatum. Ad aperiam autem commodi consequuntur culpa delectus dicta dolor ea eos error hic illo incidunt inventore ipsam, iure magni minima modi mollitia nemo nisi obcaecati officia omnis quidem quod repellat soluta temporibus ullam ut voluptate voluptatum? Ad ea incidunt qui sapiente! Aliquid architecto aut culpa cum expedita incidunt ipsa ipsam minima nobis possimus quae, quia quisquam, quos, rem voluptate!
+    </section>
+<form>
+<table align="center">
+    <tr>
+        <th colspan="2">Feedback Page</th>
+    </tr>
+    <tr>
+        <th>{{ form }}</th>
+    </tr>
+    <tr>
+        <th colspan="2" ><button type="submit">Submit</button> </th>
+    </tr>
+</table>
+</form>
+
+
+<footer>
+        <h2>Copyrights &copy; 2019</h2>
+        <h2>All Rights Reserved</h2>
+        <h4>Site Maintained By <a href="https://github.com/ArjunMajeti" target="_blank"><i class="fas fa-users"></i> ArjunMajeti</a><br>
+            <a href="{% url 'Github' %}"><i class="fas fa-users"></i> ArjunMajeti</a>
+        </h4>
+
+    </footer>

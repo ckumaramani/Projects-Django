@@ -1,0 +1,37 @@
+{% include "reuse.html" %}
+<style>
+    table{
+        background-color: dodgerblue;
+        box-shadow: 0 0 10px black;
+        border-radius: 20px;
+        padding: 10px ;
+
+    }
+    footer{
+        text-align: center;
+    }
+</style>
+<br>
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+<table align="center">
+    <tr><th colspan="2">Fill To Register</th></tr>
+    <tr>
+        <th>{{ form }}</th>
+    </tr>
+    <tr>
+        <th colspan="2"><button type="submit">Register</button> </th>
+    </tr>
+</table>
+    </form>
+
+
+<footer>
+        <h2>Copyrights &copy; 2019</h2>
+        <h2>All Rights Reserved</h2>
+        <h4>Site Maintained By <a href="https://github.com/ArjunMajeti" target="_blank"><i class="fas fa-users"></i> ArjunMajeti</a><br>
+            <a href="{% url 'Github' %}"><i class="fas fa-users"></i> ArjunMajeti</a>
+        </h4>
+
+    </footer>

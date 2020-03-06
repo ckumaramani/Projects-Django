@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body >
+    <form method="post" action="/kar/">
+        {% csrf_token %}
+    <table align="center" border="2">
+        <tr>
+            <th>
+                <h4 align="center">Login form</h4>
+            </th>
+        </tr>
+        <tr>
+        <td align="center">
+        User name: <input align="center" type="text" name="t1" required placeholder="username"><br></td>
+        </tr>
+        <tr>
+        <td align="center">
+            password:  <input type="password" name="t2" placeholder="password" required><br></td>
+        </tr>
+        <tr>
+        <td align="center">
+            <button type="submit" onclick="f1">click me</button></td>
+        </tr>
+
+        {{ res }}
+     </table>
+     </form>
+</body>
+</html>

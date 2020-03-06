@@ -1,0 +1,24 @@
+<html>
+<body>
+{{ message }}
+<form method="post" action="{% url 'Validations' %}">
+    {% csrf_token %}
+    <table align="center">
+        <tr>
+            <td><label>Feedback</label></td>
+            <td><textarea required name="fb"></textarea></td>
+        </tr>
+        <tr>
+            <th><button type="submit">Save</button> </th>
+        </tr>
+
+    </table>
+    </form>
+{{ msg }}
+    <form action="{% url 'homepage'%}" method="post">
+        {% csrf_token %}
+        <button type="submit">Logout
+        </button>
+    </form>
+</body>
+</html>

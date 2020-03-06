@@ -1,0 +1,9 @@
+{% include 'reuse.html' %}
+
+<h2>Welocome TO Admin</h2>
+
+
+<form action="/Loginpage/" method="post">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>

@@ -1,0 +1,27 @@
+<table align="center" border="2">
+    <tr>
+        <th>IDNO</th>
+        <th>NAME</th>
+        <th>DATE</th>
+    </tr>
+    {% for x in result %}
+        <tr>
+        <td>{{ x.idno }}</td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.date }}</td>
+        </tr>
+    {% endfor %}
+    <tr>
+        <td colspan="3"> {% if result.has_previous %}
+        <a href="{% url 'showdetails' %}?pno={{ result.previous_page_number }}">Prev. Page </a>
+        {% endif %}
+
+        {% if result.has_next %}
+        <a href="{% url 'showdetails' %}?pno={{ result.next_page_number }}">Next page</a>
+        {% endif %}
+        </td>
+
+    </tr>
+</table>
+
+

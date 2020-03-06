@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Select a Topic</h1>
+    <form method="post" action="/arjun/">
+        {% csrf_token %}
+        <select name="token">
+            <option>select</option>
+            <option>Core Python</option>
+            <option>Adv Python</option>
+            <option>Rest API</option>
+            <option>Project</option>
+            <option>Django</option>
+
+        </select>
+        <button type="submit">submit</button>
+    </form>
+    {% if mmessage %}
+    <h3>{{ mmessage }}</h3>
+    {% endif %}
+    {% if message %}
+    <h3>{{ message }}</h3>
+    {% endif %}
+</body>
+</html>

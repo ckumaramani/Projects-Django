@@ -1,0 +1,55 @@
+{% include "reuse.html" %}
+<style>
+    footer{
+        text-align: center;
+    }
+    table{
+        background-color: chocolate;
+        box-shadow: 0 0 10px black;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    input:hover{
+        background-color: darkgrey;
+    }
+    </style>
+<h2>Welcome TO Login Page</h2>
+<form>
+<table align="center">
+    <tr>
+        <th colspan="2">Login Page</th>
+    </tr>
+    <tr>
+        <th>{{ form }}</th>
+    </tr>
+    <tr>
+        <th colspan="2" ><button type="submit">Login</button> </th>
+    </tr>
+
+
+</table>
+</form>
+
+<form  action="{% url 'register' %}" >
+    <button type="submit">Register</button>
+</form>
+
+
+<form action="{% url 'viewall' %}">
+    <button type="submit">View All Staff Details</button>
+</form>
+
+<form action="{% url 'viewallid' %}{{ x.idno }}">
+    <button type="submit">View All Staff Id`s</button>
+</form>
+
+
+
+<footer>
+        <h2>Copyrights &copy; 2019</h2>
+        <h2>All Rights Reserved</h2>
+        <h4>Site Maintained By <a href="https://github.com/ArjunMajeti" target="_blank"><i class="fas fa-users"></i> ArjunMajeti</a><br>
+            <a href="{% url 'Github' %}"><i class="fas fa-users"></i> ArjunMajeti</a>
+        </h4>
+
+    </footer>

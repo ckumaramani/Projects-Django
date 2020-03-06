@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {{ fn }}
+    <form method="post" action="/sendln/">
+        {% csrf_token %}
+        <input type="text" name="t2" required placeholder="lastname">
+        <button type="submit">send back</button>
+    </form>
+</body>
+</html>

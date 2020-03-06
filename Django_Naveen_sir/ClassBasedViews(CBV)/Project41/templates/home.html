@@ -1,0 +1,26 @@
+
+<table align="center">
+    <tr>
+        <th colspan="4">Employee Detail`s</th>
+    </tr>
+    <tr>
+        <th width="100"> IDNO </th>
+        <th width="100"> NAME </th>
+        <th width="100"> DESIGNATION </th>
+        <th width="150"> CONTCT NO </th>
+        <th width="150"> DELETE </th>
+    </tr>
+    {% for x in object_list %}
+        <tr>
+        <th width="150">
+            <a href="/update{{ x.idno }}/"> {{ x.idno }}
+        </a></th>
+        <th width="150" >{{ x.name }}</th>
+        <th width="150">{{ x.designation }}</th>
+        <th width="150">{{ x.contactno}}</th>
+        <th>
+            <form action="/delete{{ x.idno }}/">
+                <button type="submit">Yes</button></form> </th>
+        </tr>
+    {% endfor %}
+</table>

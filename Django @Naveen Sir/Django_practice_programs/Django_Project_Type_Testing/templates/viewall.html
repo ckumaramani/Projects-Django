@@ -1,0 +1,26 @@
+
+<html>
+    <body>
+    <table align="center" border="2">
+       <tr>
+           <th width="100">Id No.</th>
+           <th width="100">Name</th>
+           <th width="100">Designation</th>
+           <th width="100"> Contact No.</th>
+           <th width="100">Username</th>
+           <th width="100">Password</th>
+       </tr>
+
+      {% for x in data %}
+       <tr>
+           <th width="100">{{ x.idno }}</th>
+           <th width="100">{{ x.name }}</th>
+           <th width="100">{{ x.designatoin }}</th>
+           <th width="200">{{ x.contactno }}</th>
+           <th width="100">{{ x.username }}</th>
+           <th width="100">{{ x.password }}</th>
+       </tr>
+        {% endfor %}
+    </table>
+    </body>
+</html>

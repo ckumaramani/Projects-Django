@@ -1,0 +1,35 @@
+<html>
+    <body>
+    <form method="post" action="/senddetails/">
+        {% csrf_token %}
+        <table border="2" align="center">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Name" name="t1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" placeholder="age" name="t2" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" placeholder="Contact no." name="t3" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" placeholder="Email-id" name="t4" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <button type="submit">send</button>
+                </th>
+            </tr>
+        </table>
+
+        </form>
+    </body>
+</html>

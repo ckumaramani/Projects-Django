@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>First Name</title>
+    </head>
+    <body>
+    <form action="/firstname/" method="post">
+        {% csrf_token %}
+        <table align="center">
+            <tr>
+                <th >
+                    Fill The First Name
+                </th>
+            </tr>
+        </table>
+        <table align="center">
+            <br>
+            <tr>
+                <td>
+                    First Name
+                </td>
+                <td>
+                    <input type="text" name="fn" required autofocus>
+                </td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <th rowspan="2"> <button type="submit" >Submit</button></th>
+            </tr>
+
+        </table>
+
+    </form>
+    <h2 align="center" style="background-color: orangered" >{{ fullname }}</h2>
+    </body>
+</html>

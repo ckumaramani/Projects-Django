@@ -1,0 +1,70 @@
+{% load static %}
+{% include 'reuse.html' %}
+<style>
+    table {}
+
+    th,
+    td,
+    tr {
+        padding: 15px;
+    }
+</style>
+<form method="post" action="/Save/" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table align="center">
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <tr>
+            <td><label>Idno</label></td>
+            <td><input type="number" name="t1" required></td>
+        </tr>
+        <tr>
+            <td><label>Name</label></td>
+            <td><input type="text" name="t2" required></td>
+        </tr>
+        <tr>
+            <td><label>Designation </label></td>
+
+            <td><input type="radio" name="rd" value="Manager">Manager</td>
+            <td><input type="radio" name="rd" value="Asst. Manager">Asst. Manager</td>
+            <td><input type="radio" name="rd" value="Software Developer">Software Developer</td>
+        </tr>
+        <tr>
+            <td><label>Salary</label></td>
+            <td><input type="number" name="t3" required></td>
+        </tr>
+        <tr>
+            <td><label>Contatct No</label></td>
+            <td><input type="number" name="t4" required></td>
+        </tr>
+        <tr>
+            <td><label>Image</label></td>
+            <td><input type="file" name="image"></td>
+        </tr>
+        <tr>
+            <td><label>Username</label></td>
+            <td><input type="text" name="t5" required></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" name="t6" required></td>
+        </tr>
+        <tr>
+            <th colspan="2"><button type="submit" class="btn btn-info">Register</button> </th>
+        </tr>
+    </table>
+</form>
+
+
+{{ message }}
+
+<footer style="text-align: center">
+    <h2>
+        Copyright &copy; 2016-2022
+    </h2>
+    <h3>All Rights reserved</h3>
+    <h6>
+        Site maintained By <a href="">Arjunmajeti</a>
+    </h6>
+</footer>

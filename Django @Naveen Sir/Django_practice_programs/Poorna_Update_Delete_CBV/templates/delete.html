@@ -1,0 +1,34 @@
+{% include 'reuse.html' %}
+
+
+<table>
+    <tr>
+        <th>Delete</th>
+    </tr>
+    <tr>
+        <td>IDNO :</td>
+        <td>{{ object.idno }}</td>
+    </tr>
+    <tr>
+        <td>NAME :</td>
+        <td>{{ object.name}}</td>
+    </tr>
+    <tr>
+        <td>salary :</td>
+        <td>{{ object.salary }}</td>
+    </tr>
+    <tr>
+        <td>contact no :</td>
+        <td>{{ object.contactno }}</td>
+    </tr>
+    <tr>
+        <td>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit">Yes</button>
+            </form> </td>
+        <td><form action="/viewall/">
+            <button type="submit">No</button>
+        </form></td>
+    </tr>
+</table>

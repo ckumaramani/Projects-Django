@@ -1,0 +1,98 @@
+{% load staticfiles %}
+
+ <html>
+ <head>
+        <title>Arjun`s Group Of Companies</title>
+        <style>
+            body{
+                font-family: "Comic Sans MS" ;
+            }
+             header, footer{
+                text-align: center;
+                 margin: 0;
+                 color:cyan;
+            }
+            nav {
+                padding: 15px 25px;
+                background-color: gray;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+
+            }
+            nav a{
+                text-decoration:none ;
+                padding: 15px;
+            }
+            nav a:hover{
+                background-color: coral;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+                color: white;
+
+            }
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Arjun`s Group Of Companies</h1>
+        <small>Quality Is Main Motive</small>
+    </header>
+    <nav>
+        <a href="/homepage/">Home</a>
+        <a href="/SaveRegister/">Login</a>
+        <a href="">Branches</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+    </nav>
+
+    <form action="/SaveRegister/" method="post">
+        {% csrf_token %}
+    <table align="center">
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+         <tr><td><label>idno</label></td>
+        <td><input type="number" name="idno" required></td></tr>
+        <tr><td><label>Name</label></td>
+        <td><input type="text" name="name" required></td></tr>
+        <tr>
+            <td><label>Contct No</label>
+            <td><input type="number" name="contactno" required></td>
+        </tr>
+        <tr>
+            <td>Designation</td>
+            <td colspan="2">
+                <input type="radio" name="rb" value="Manager" >Manager
+                <input type="radio" name="rb"value="Asst. Manager">Asst. Manager
+                <input type="radio" name="rb" value="Software Manager">Software Manager
+            </td>
+
+        </tr>
+        <tr>
+            <td><label>Username</label></td>
+            <td><input type="text" name="un" required></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" name="up" required></td>
+        </tr>
+        <tr>
+            <th colspan="2"> <button type="submit">Register</button> </th>
+        </tr>
+
+    </table>
+        </form>
+    <!-----View All Employees Details------>
+    <form>
+        <a href="/ViewAllStaff/">View All Staff Details</a>
+    </form>
+
+
+        <footer>
+        <h2>Copyright &copy; Reserved 2019</h2>
+        <h4>Website Maintained by </h4>
+        <small> <a href="https://www.google.com/" target="_blank">Mahe Infotech</a></small>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+{% include 'reuse.html' %}
+
+<form action="/validations/" method="post">
+    {% csrf_token %}
+
+<table>
+    <tr>
+        <th>Login Page</th>
+    </tr>
+    <tr>
+        <td>Username</td>
+        <td><input type="text" name="una" required></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" name="upa" required> </td>
+    </tr>
+    <tR>
+
+        <th><button type="submit">Login</button> </th>
+    </tR>
+</table>
+</form>
+<br>
+<br>
+
+<form action="/register/" method="post">
+    {% csrf_token %}
+    <button type="submit">Register</button>
+</form>
+
+{% if messsage %}
+{{ messsage }}
+{% endif %}
+
+<form action="/Viewall/" method="post">
+    {% csrf_token %}
+    <button type="submit">View All Employee`s</button>
+</form>

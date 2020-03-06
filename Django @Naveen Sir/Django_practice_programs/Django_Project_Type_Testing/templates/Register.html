@@ -1,0 +1,32 @@
+<form method="post" action="/Registersave/">
+    {% csrf_token %}
+    <table align="center">
+        <tr>
+            <th>Registration</tH>
+        </tr>
+        <tr>
+            <td><input type="number" name="idno"  placeholder="Idno" required></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="name"  placeholder="Name" required></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="rd" value="Manager">Manager</td>
+            <td><input type="radio" name="rd" value="Asst.Manager">Asst.Manager</td>
+            <td><input type="radio" name="rd" value="SoftwareEngineer">SoftwareEngineer</td>
+        </tr>
+        <tr>
+            <td><input type="number" name="cn" placeholder="Contact No"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="un" placeholder="UserName"></td>
+        </tr>
+        <tr>
+            <td><input type="password" name="up" placeholder="Password"></td>
+        </tr>
+        <tr>
+            <th><button type="submit">Register</button> </th>
+        </tr>
+    </table>
+</form>

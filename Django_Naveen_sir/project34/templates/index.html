@@ -1,0 +1,15 @@
+
+
+<html>
+    <body>
+    <form action="/check/" method="get">
+        <button type="submit">Get Button</button>
+    </form>
+
+
+    <form action="/check/" method="post">
+        {% csrf_token %}
+        <button type="submit">post Button</button>
+    </form>
+    </body>
+</html>

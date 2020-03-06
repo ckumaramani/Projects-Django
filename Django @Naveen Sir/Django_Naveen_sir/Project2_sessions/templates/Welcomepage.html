@@ -1,0 +1,28 @@
+<html>
+
+    <body>
+    {{ messsage }}
+    <font style="text-align: center"><h1>Welcome page</h1></font>
+    <form method="post" action="{% url 'feedbackpage' %}">
+    <table align="center">
+        <tr>
+            <td>feedback</td>
+            <td><textarea  name="fb" rows="2"cols="10"></textarea></td>
+        </tr>
+        <tr>
+            <th>
+                <button type="submit">Save</button>
+            </th>
+        </tr>
+    </table>
+        <form action="{% url 'homepage' %}" method="post">
+            {% csrf_token %}
+        <table>
+            <tr>
+                <th><button type="submit">Logout</button> </th>
+            </tr>
+        </table>
+        </form>
+    </form>
+    </body>
+</html>

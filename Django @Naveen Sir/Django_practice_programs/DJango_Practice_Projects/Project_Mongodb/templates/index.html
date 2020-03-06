@@ -1,0 +1,51 @@
+<html>
+    <head>
+    <title>Mongo DataBase</title>
+    </head>
+    <body>
+    <form method="post" action="/save/">
+        {% csrf_token %}
+        <table align="center">
+            <tr>
+                <th>
+                    Fill The Details
+                </th>
+            </tr>
+            <tr>
+                <th>IDNO :</th>
+                <td><input type="number" name="idno" required></td>
+            </tr>
+            <tr>
+                <th>NAME</th>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <th>SALARY</th>
+                <td><input type="number" name="salary" required></td>
+            </tr>
+            <tr>
+                <th>Designation</th>
+                <td><input type="text" name="desig" required></td>
+            </tr>
+            <tr>
+                <th>Contact No:</th>
+                <td><input type="number" name="contactno" required></td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <th>
+                    <button type="submit">Save</button>
+                </th>
+            </tr>
+        </table>
+    </form>
+    {{ message }}
+
+    <br>
+    <br>
+    <a href="/download/">
+        Click to Download Staff Details
+    </a>
+    </body>
+</html>

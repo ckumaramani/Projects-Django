@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+    nav{
+        padding: 15px;
+        background-color: orangered;
+        box-shadow: 0 0 15px black;
+        border-radius: 15px;
+    }
+
+    div{
+        text-align: left;
+        width: 800px;
+    }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Arjun Industries</h2>
+        </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Branches</a>
+        <a href="">Enquiry</a>
+        <a href="">About us</a>
+        <a href="">Contact us</a>
+    </nav>
+    <section>
+        <form action="/login/" method="post">
+            {% csrf_token %}
+            <table align="right" id="table">
+                <tr>
+                    <th>Login</th>
+                </tr>
+                <tr>
+                    <td><label>Username</label></td>
+                    <td><input type="text" name="un" required> </td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name="up" required> </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="rd" value="Manager">Manager </td>
+                    <td><input type="radio" name="rd" value="Asst.Manager">Asst. Manager </td>
+                    <td><input type="radio" name="rd" value="SoftwareEngineer">Software Engineer </td>
+                </tr>
+                <tr>
+                    <th><button type="submit">Submit</button> </th>
+                </tr>
+
+
+                {{ message }}
+        {{ msg }}
+        {{ mesg1 }}
+        {{ mesg2 }}
+        {{ mesg3 }}
+            </table>
+
+        </form>
+
+        <form action="/Register/" id="reg">
+            <button type="submit">Register</button>
+        </form>
+
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque eligendi laudantium magni, minima
+            molestias natus possimus provident recusandae reprehenderit. Atque cum explicabo fugiat obcaecati
+            perspiciatis provident sed sint tempora.
+
+        Accusamus distinctio facilis, ipsam non nulla perferendis quis quo repudiandae tempora tenetur voluptas
+            voluptate? Beatae cum dolor eos excepturi expedita, explicabo itaque iusto laboriosam laudantium nostrum,
+            officia pariatur possimus voluptatem.
+        uga, nulla, voluptatem. Ab accusamus accusantium animi atque debitis deserunt dolore doloribus eos esse
+            fuga ipsa, itaque iure laborum magni maxime modi nesciunt obcaecati praesentium quod recusandae, sequi unde
+            voluptatum.
+         aliquam, animi commodi corporis culpa deserunt doloribus earum eos error in ipsum laborum laudantium
+            libero magni nesciunt numquam, pariatur quae qui quis quo repellat, saepe suscipit tempore vel voluptatum?
+        tque cum dolore dolorum, ducimus fugit incidunt labore ut velit! Animi beatae facilis fugiat illo nemo
+            obcaecati quibusdam sit voluptas. Accusamus dolor esse illo itaque optio suscipit tenetur, veniam
+            voluptatum!
+        </div>
+    </section>
+    </body>
+</html>

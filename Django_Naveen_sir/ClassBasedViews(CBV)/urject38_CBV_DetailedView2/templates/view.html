@@ -1,0 +1,8 @@
+<table>
+    <tr><th>IDNO</th></tr>
+    {% for x in object_list %}
+    <a href="/oneemployeedetails {{ x.idno }}/">
+    <tr><td>{{ x.idno }}</td></tr>
+        </a>
+    {% endfor %}
+</table>

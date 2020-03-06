@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table bgcolor="#a9a9a9" align="center" border="2" width="500px">
+        <tr>
+        {% for g in data %}
+            {% if g ="mov" %}
+                <th width="100px">{{ " " }}</th>
+            {% else %}
+                <th width="100px">{{ g }}</th>
+            {% endif %}
+            {% if g ="car" %}
+                <th width="100px">{{ " " }}</th>
+            {% else %}
+                <th width="100px">{{ g }}</th>
+            {% endif %}
+            {% if g ="img" %}
+                <th width="100px">{{ " " }}</th>
+            {% else %}
+                <th width="100px">{{ g }}</th>
+            {% endif %}
+
+        {% endfor %}
+        </tr>
+        <tr align="center">
+            {% for g in data %}
+                {% if g="mve" %}
+                    <td bgcolor="#f0f8ff"><font color="red">
+               {% for a in data.mve %}
+                        <h3>{{ a }}</h3>
+                        {% endfor %}
+                    </font>
+                    </td>
+                {% endif %}
+                {% if g="car" %}
+                    <td bgcolor="#ffe4c4f"><font color="green">
+               {% for a in data.car %}
+                        <h3>{{ a }}</h3>
+                        {% endfor %}
+                    </font>
+                    </td>
+                {% endif %}
+                {% if g="img" %}
+                    <td bgcolor="#7fffd4"><font color="blue">
+               {% for a in data.img %}
+                        <h3>{{ a }}</h3>
+                        {% endfor %}
+                    </font>
+                    </td>
+                {% endif %}
+        {% endfor %}
+        </tr>
+
+
+    </table>
+
+</body>
+</html>

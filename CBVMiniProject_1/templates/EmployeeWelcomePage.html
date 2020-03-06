@@ -1,0 +1,23 @@
+{% include 'reuse.html' %}
+
+
+<h2>Welcome To Employee Page</h2>
+
+<h4>Employee Name: {{ data  }}</h4>
+
+
+<form action="/EmployeeWelcomePage/" method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-info">Logout</button>
+</form>
+
+
+<footer style="text-align: center">
+    <h2>
+        Copyright &copy; 2016-2022
+    </h2>
+    <h3>All Rights reserved</h3>
+    <h6>
+        Site maintained By <a href="">Arjunmajeti</a>
+    </h6>
+</footer>

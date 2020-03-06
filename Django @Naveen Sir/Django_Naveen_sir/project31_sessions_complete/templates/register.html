@@ -1,0 +1,21 @@
+<html>
+<body>
+<form method="post" action="/save/">
+    {% csrf_token %}
+
+
+    <table align="center">
+        <tr>
+            <th>Fill To Register</th>
+        </tr>
+        <tr><td><input type="text" placeholder="NAME" name="name" required></td></tr>
+        <tr><td><input type="number" placeholder="CONTACT NO" name="contactno" required></td></tr>
+        <tr><td><input type="text" placeholder="USERNAME" name="username" required></td></tr>
+        <tr><td><input type="password" placeholder="PASSWORD" name="password" required></td></tr>
+        <tr>
+            <th><button type="submit">Register</button></th>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

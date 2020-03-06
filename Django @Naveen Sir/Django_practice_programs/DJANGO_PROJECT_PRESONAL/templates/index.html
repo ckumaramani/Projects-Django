@@ -1,0 +1,89 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>Arjun`s Group Of Companies</title>
+        <style>
+            body{
+                font-family: "Comic Sans MS" ;
+            }
+             header, footer{
+                background-image: {% static 'images/background.jpg' %};
+                text-align: center;
+                 margin: 0;
+                 color:cyan;
+            }
+            nav {
+                padding: 15px 25px;
+                background-color: gray;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+
+            }
+            nav a{
+                text-decoration:none ;
+                padding: 15px;
+            }
+            nav a:hover{
+                background-color: coral;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+                color: white;
+
+            }
+            section{
+                background-color: gray;
+            }
+            div{
+                display: inline-block;
+                background-color: orangered;
+                padding: 15px 25px;
+                margin: 5px;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Arjun`s Group Of Companies</h1>
+        <small>Quality Is Main Motive</small>
+    </header>
+    <nav>
+        <a href="/homepage/">Home</a>
+        <a href="/loginpagE/">Login</a>
+        <a href="">Branches</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+    </nav>
+    <section>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolorem doloribus libero molestiae
+            repellendus. Adipisci architecto deleniti dolorem enim error, et fugit, hic inventore maiores, nam omnis
+            pariatur soluta veritatis.
+        </div>
+        <div>Animi at aut dicta dolores, earum exercitationem, illo in incidunt ipsam ipsum nemo non possimus recusandae
+            sed sint sit soluta totam vel voluptate voluptatem. Debitis ex in quia reiciendis vero!
+        </div>
+        <div>Accusantium impedit iste molestias nostrum possimus? Aliquam enim maiores nulla quos rerum tempore
+            voluptatum. Adipisci, alias doloribus eaque excepturi fugiat laborum magni molestiae nihil obcaecati odit
+            officiis optio, quibusdam rem.
+        </div>
+        <div>Cum delectus itaque laboriosam. Ad animi at aut consequuntur deleniti, deserunt dolores doloribus earum
+            eius et eum magnam necessitatibus obcaecati odit quia rem ut, veniam vitae. Corporis dolor magnam sed.
+        </div>
+        <div>Aliquam architecto debitis eius, esse eveniet hic iusto non obcaecati officia praesentium qui ullam
+            veritatis vero! Accusantium ad adipisci beatae ea iure magnam maiores quae quia reiciendis! Ducimus, minima,
+            odit.
+        </div>
+    </section>
+
+    <footer>
+        <h2>Copyright &copy; Reserved 2019</h2>
+        <h4>Website Maintained by </h4>
+        <small> <a href="https://www.google.com/" target="_blank">Mahe Infotech</a></small>
+    </footer>
+    </body>
+</html>

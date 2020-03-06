@@ -1,0 +1,77 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>User Page</title>
+        <style>
+             body{
+                font-family: "Comic Sans MS" ;
+            }
+             header, footer{
+                text-align: center;
+                 margin: 0;
+                 color:cyan;
+            }
+            nav {
+                padding: 15px 25px;
+                background-color: gray;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+
+            }
+            nav a{
+                text-decoration:none ;
+                padding: 15px;
+            }
+            nav a:hover{
+                background-color: coral;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+                color: white;
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Arjun`s Group Of Companies</h1>
+        <small>Quality Is Main Motive</small>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Login</a>
+        <a href="">Branches</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+    </nav>
+        <!---Body----->
+
+    <div>
+        <h2>Welcome To</h2>
+        <h3>{{ un }}</h3>
+
+        <img src="{% static 'images/flower.jpg' %} ">
+
+
+
+
+
+    </div>
+
+
+    <form action="/logoutfromwelcomepage/">
+        <button type="submit">Logout</button>
+    </form>
+
+        <!----footer------->
+
+     <footer>
+        <h2>Copyright &copy; Reserved 2019</h2>
+        <h4>Website Maintained by </h4>
+        <small> <a href="https://www.google.com/" target="_blank">Mahe Infotech</a></small>
+    </footer>
+    </body>
+</html>

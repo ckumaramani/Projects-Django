@@ -1,0 +1,28 @@
+<table>
+    <tr>
+        <th>Delete Employee Detiail`s</th>
+    </tr>
+    <tr>
+        <td>IDNO :</td>
+        <td>{{ object.idno }}</td>
+    </tr>
+    <tr>
+        <td>NAME :</td>
+        <td>{{ object.name }}</td>
+    </tr>
+    <tr>
+        <td>DESIGNATION :</td>
+        <td>{{ object.designation }}</td>
+    </tr>
+    <tr>
+        <td>CONTACT NO :</td>
+        <td>{{ object.contactno }}</td>
+    </tr>
+
+    <tr>
+        <th>
+            <form method="post">
+                {% csrf_token %}<button type="submit">Yes</button> </form></th>
+        <th><form action="/home/"><button type="submit">No</button></form> </th>
+    </tr>
+</table>

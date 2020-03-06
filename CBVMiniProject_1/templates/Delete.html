@@ -1,0 +1,52 @@
+{% include 'reuse.html' %}
+<style>
+    table{
+        background-color: grey;
+        padding: 15px 25px;
+        border-radius: 15px;
+        color: white;
+        margin-top: 5px;
+    }
+    td,th,tr{
+        padding: 15px 25px;
+    }
+</style>
+<table align="center">
+    <tr>
+        <th style="font-size: 25px; color: greenyellow ;" colspan="2">Delete Employee Details</th>
+    </tr>
+    <tr>
+        <td>Idno :</td>
+        <td>{{ object.idno }}</td>
+    </tr>
+    <tr>
+        <td>Name :</td>
+        <td>{{ object.name }}</td>
+    </tr>
+    <tr>
+        <td>Designation :</td>
+        <td>{{ object.designation }}</td>
+    </tr>
+    <tr>
+        <td>Salary :</td>
+        <td>{{ object.salary }}</td>
+    </tr>
+    <tr>
+        <td>Contact No :</td>
+        <td>{{ object.contactno }}</td>
+    </tr>
+    <tr>
+        <td>Username</td>
+        <td>{{ object.username }}</td>
+    </tr>
+    <strong><tr>
+        <th>
+            <form method="post">
+                {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Yes</button></form> </th>
+        <th>
+            <form action="/viewall/">
+                <button type="submit" class="btn btn-info">No</button></form> </th></strong>
+    </tr>
+</table>
+    </form>

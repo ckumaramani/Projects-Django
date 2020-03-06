@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    nav{
+        padding: 15px;
+        background-color: teal;
+    }
+    nav a
+    {
+        padding: 15px 5px;
+        margin: 5px;
+        text-decoration: none;
+    }
+    nav a:hover{
+        background-color: orangered;
+        box-shadow: 0 0 15px black;
+        border: 15px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        Companies
+    </header>
+    <nav>
+        <a href="{% url 'homepage' %}">Home</a>
+        <a href="{% url 'Loginpage' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+    </nav>
+</body>
+</html>

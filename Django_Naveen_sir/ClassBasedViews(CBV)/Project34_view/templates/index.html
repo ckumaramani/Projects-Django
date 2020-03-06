@@ -1,0 +1,10 @@
+
+<form action="/check/" method="get">
+    <button type="submit">Get Click</button>
+</form>
+
+
+<form action="/check/" method="post">
+    {% csrf_token %}
+    <button type="submit">post Click</button>
+</form>

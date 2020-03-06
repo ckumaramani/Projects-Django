@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Staff  Form Filling</title>
+    </head>
+    <body>
+        <form method="post" action="/show/">
+            {% csrf_token %}
+            <h3 align="center">Staff Details Form</h3>
+            <table align="center" border="0">
+
+                <tr>
+                    <td>Idno</td>
+                    <td>
+                        <input type="number" required autofocus name="idno" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" required  name="name" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contact No.</td>
+                    <td>
+                        <input type="number" required  name="contactno" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Designation</td>
+                    <td>
+                        <input type="text" required  name="designation" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Salary</td>
+                    <td>
+                        <input type="number" required  name="salary" >
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th><button type="submit">Save</button> </th>
+                </tr>
+            </table>
+        </form>
+        {{ message }}
+
+        <a href="/view/">
+            View All Staff Detail`s
+        </a>
+        <br>
+        <br>
+
+
+    <a href="/download/">
+        Download All Staff Detail`s
+    </a>
+    </body>
+</html>

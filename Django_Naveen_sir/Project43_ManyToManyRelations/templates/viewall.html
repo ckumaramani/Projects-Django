@@ -1,0 +1,18 @@
+<table align="center" border="2">
+    <tr>
+        <th colspan="3">Article  Details</th>
+    </tr>
+    <tr>
+        <th>Article</th>
+        <th>Publications</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+        <td>{{ x.headline }}</td>
+                {% for y in x.publication.all  %}
+                    <td>{{ y }}</td>
+
+                {% endfor %}
+            {% endfor %}
+
+</table>

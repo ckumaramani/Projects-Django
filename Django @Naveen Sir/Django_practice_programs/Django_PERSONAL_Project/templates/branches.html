@@ -1,0 +1,136 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>Arjun`s Group Of Companies</title>
+        <style>
+            body{
+                font-family: "Comic Sans MS" ;
+            }
+             header, footer{
+                text-align: center;
+                 margin: 0;
+                 color:cyan;
+            }
+            nav {
+                padding: 15px 25px;
+                background-color: gray;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+
+            }
+            nav a{
+                text-decoration:none ;
+                padding: 15px;
+            }
+            nav a:hover{
+                background-color: coral;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+                color: white;
+
+            }
+
+
+                    fieldset{
+            box-shadow: 0 0 10px black;
+            padding: 15px;
+            border: 2px solid orangered;;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        legend{
+            font-size: 20px;
+            padding: 15px 15px;
+            background-color: deepskyblue;
+            box-shadow: 0 0 10px black;
+            border: 2px solid orangered;;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px
+
+        }
+
+        div{
+
+            display: inline-block;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+
+
+        }
+
+
+
+       #div3, #div2{
+           border-top-right-radius: 35px;
+           border-bottom-left-radius: 35px;
+       }
+
+
+
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Arjun`s Group Of Companies</h1>
+        <small>Quality Is Main Motive</small>
+    </header>
+    <nav>
+        <a href="/gotohomepageB/">Home</a>
+        <a href="{% url 'gologinpage' %}">Login</a>
+        <a href="{% url 'gobranchespage' %}">Branches</a>
+        <a href="{% url 'goaboutuspage' %}">About Us</a>
+        <a href="{% url 'gocontactuspage' %}">Contact Us</a>
+    </nav>
+    <!----body---->
+
+
+    <div>
+        <fieldset>
+            <legend>1.Ammerpet</legend>
+            Mahe Group of Hostels, <br>
+            Beside Ammerpet Metro Station,
+            Yellareddyguda,
+            Hyderabad,
+            Telangana-522147
+        </fieldset>
+    </div>
+
+<div id="div3">
+    <fieldset>
+        <legend>2.Sr Nagar</legend>
+    Mahe Group of Hostels,<br>
+    Near Vasavi Degree Collage,
+    Sr Nagar Police Station,
+    Hyderabad,
+    Telangana-521248
+    </fieldset>
+</div>
+
+
+<div id="div2">
+    <fieldset>
+        <legend>3.Panjagutta</legend>
+    Mahe Group of Hostels,<br>
+    Beside Panjagutta Metro Station,
+    Near INOX Mall,
+    Hyderabad,
+    Telangana-521248
+    </fieldset>
+</div>
+
+
+
+
+
+    <!----footer---->
+    <footer>
+        <h2>Copyright &copy; Reserved 2019</h2>
+        <h4>Website Maintained by </h4>
+        <small> <a href="https://www.google.com/" target="_blank">Mahe Infotech</a></small>
+    </footer>
+    </body>
+</html>

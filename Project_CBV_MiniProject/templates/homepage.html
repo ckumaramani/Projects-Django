@@ -1,0 +1,44 @@
+{% load staticfiles %}
+{% include "reuse.html" %}
+<style>
+    div:hover{
+        background-color: dodgerblue;
+        color: white;
+    }
+    footer{
+        text-align: center;
+        background-image: {% static 'images/background.jpg' %};
+
+    }
+</style>
+<h2 style="text-align: center">Arjun Group Of Industries</h2>
+
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet animi commodi cum deleniti doloremque dolores
+    dolorum eaque earum, eum id maiores nobis pariatur porro possimus recusandae repellendus veniam voluptatibus!
+</div>
+<div>Aliquid dolore laudantium rerum voluptatem. Animi consequuntur, cupiditate deleniti eveniet, expedita facere fuga
+    fugiat harum inventore iusto molestias nam natus nemo numquam odit perferendis porro reprehenderit sequi tempora
+    tempore, velit!
+</div>
+<div>Amet architecto distinctio est ipsam praesentium quia sed. Accusantium aut autem cum delectus, dolorum eos esse eum
+    ex incidunt maxime minima nobis officia quaerat quasi repudiandae sit soluta suscipit ut.
+</div>
+<div>Asperiores aspernatur aut, debitis deserunt eaque eius facere illo ipsa ipsam laboriosam laborum magnam magni
+    maxime placeat quae quam ratione repellat repudiandae saepe sequi tempore ullam vel veritatis vitae voluptatum!
+</div>
+<div>Amet commodi dicta dolorem doloremque eum, facere id illo inventore ipsa ipsam non numquam obcaecati optio quidem
+    quisquam rem sapiente soluta veritatis! Accusantium architecto consequatur, enim id ipsum necessitatibus nesciunt.
+</div>
+<div>Amet commodi dicta dolorem doloremque eum, facere id illo inventore ipsa ipsam non numquam obcaecati optio quidem
+    quisquam rem sapiente soluta veritatis! Accusantium architecto consequatur, enim id ipsum necessitatibus nesciunt.
+</div>
+
+<footer>
+
+        <h2>Copyrights &copy; 2019</h2>
+        <h2>All Rights Reserved</h2>
+        <h4>Site Maintained By <a href="https://github.com/ArjunMajeti" target="_blank"><i class="fas fa-users"></i> ArjunMajeti</a><br>
+            <a href="{% url 'Github' %}"><i class="fas fa-users"></i> ArjunMajeti</a>
+        </h4>
+
+    </footer>

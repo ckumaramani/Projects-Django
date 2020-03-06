@@ -1,0 +1,28 @@
+<html>
+    <body>
+    <form method="post" action="/valid/">
+        {% csrf_token %}
+    <table align="center">
+    <tr>
+        <th>Login page</th>
+    </tr>
+        <tr>
+            <th><input type="text" name="username" placeholder="Username"></th>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" placeholder="Password"></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Login</button> </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/register/">Register</a>
+            </td>
+        </tr>
+    </table>
+    </form>
+    {{ message }}
+    {{ msg }}
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Arjun Group Of Industries</title>
+    </head>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <style>
+        body{
+            font-family: "Comic Sans MS";
+            margin: 0;
+        }
+        header{
+            text-align: right;
+        }
+        nav{
+            padding: 15px 25px;
+
+            background-color: darkgrey;
+             box-shadow: 0 0 10px black;
+            border-radius: 15px;
+
+        }
+        #move{
+            background-color: greenyellow;
+            color: gray;
+            box-shadow: 0 0 10px black;
+            border-radius: 15px;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 15px;
+        }
+        nav a:hover{
+            background-color: orangered;
+            color: white;
+            box-shadow: 0 0 10px black;
+            border-radius: 15px;
+        }
+        div{
+            display: inline-block;
+            background-color:orangered;
+            padding: 10px 25px;
+            margin: 10px;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px black;
+        }
+        div:hover{
+            background-color: lightslategrey;
+            color: white;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    <body>
+    <header>
+        <h1><img src=""> Arjun Group Of Industries</h1>
+        <marquee><p id="move">Quality is out Motto</p></marquee>
+    </header>
+    <!----menu bar---->
+    <nav>
+        <a href="{% url 'indexL' %}"><i class="fa fa-home"></i> Home</a>
+        <a href="{% url 'enquiry' %}"><i class="far fa-address-card"></i> Enquiry</a>
+        <a href="{% url 'LoginI' %}"> <i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="{% url 'BranchesI' %}"> <i class="far fa-building"></i> Branches</a>
+        <a href="{% url 'AboutusI' %}"> <i class="fa fa-id-badge"></i> About us</a>
+        <a href="{% url 'ContactusI' %}"><i class="fa fa-envelope"></i> Contact us</a>
+    </nav>
+    <!----body---->
+ <div>
+        <h2>Our Motto:-</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+        dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod, sapiente, similique sint
+        totam vel?
+    </div>
+<div>
+    <h2>Customer`s Review:-</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+    dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod adipisicing elit
+</div>
+<div>
+    <h2>Achievements:-</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+    dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod, sapiente, similique sint
+    totam vel?
+</div>
+<div>
+    <h2>Why To Invest:-</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+    dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod, sapiente, similique sint
+    totam vel?
+</div>
+
+
+    <!---------footer----->
+    <footer>
+        <h2>Copyrights &copy; 2019</h2>
+        <h3>All Rights Reserved</h3>
+        <h4>Site Maintained By <a href="https://github.com/ArjunMajeti" target="_blank"><i class="fas fa-users"></i> ArjunMajeti</a>
+        </h4>
+
+    </footer>
+    </body>
+</html>

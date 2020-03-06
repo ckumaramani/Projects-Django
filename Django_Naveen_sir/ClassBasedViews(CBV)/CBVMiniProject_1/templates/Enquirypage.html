@@ -1,0 +1,37 @@
+{% include 'reuse.html' %}
+<style>
+    table{
+        margin-top: 5px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px black;
+
+    }
+    td,th,tr{
+        padding: 10px 10px;
+    }
+</style>
+
+<form action="/Enquirypage/" method="post">
+    {% csrf_token %}
+<table align="center">
+    <tr>
+        <ins><th colspan="2" style="text-align: center; color: orangered; font-size: 25px;">Enquiry Form</th></ins>
+    </tr>
+    <tr>
+        <td>{{ form }}</td>
+    </tr>
+    <tr>
+        <th colspan="5"><button type="submit" class="btn btn-info">Submit</button></th>
+    </tr>
+</table>
+    </form>
+
+<footer style="text-align: center">
+    <h2>
+        Copyright &copy; 2016-2022
+    </h2>
+    <h3>All Rights reserved</h3>
+    <h6>
+        Site maintained By <a href="">Arjunmajeti</a>
+    </h6>
+</footer>

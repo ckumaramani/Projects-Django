@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <style>
+
+        body{
+            font-family: "Comic Sans MS" ;
+        }
+        </style>
+    </head>
+    <body>
+    <form method="post" action="{% url 'welcomepage' %}">
+        {% csrf_token %}
+    <table align="center">
+        <tr>
+            <th>Login page</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="un" placeholder="username" required>
+            </td>
+         </tr>
+        <tr>
+            <td>
+                <input type="password" name="up" placeholder="password" required>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <button type="submit">Submit</button>
+            </th>
+        </tr>
+    </table>
+    </form>
+    {{ msg }}
+    </body>
+</html>

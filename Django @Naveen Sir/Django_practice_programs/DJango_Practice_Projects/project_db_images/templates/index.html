@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Staff Details Form
+        </title>
+    </head>
+    <body>
+        <form action="/view/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table align="center">
+                <tr>
+                    <th>Filling Form</th>
+                </tr>
+                <tr>
+                    <th><input type="number" placeholder="IDNO" name="id" required></th>
+                </tr>
+                <tr>
+                    <th><input type="text" placeholder="NAME" name="name" required></th>
+                </tr>
+                <tr>
+                    <th><input type="text" placeholder="DESIGNATION" name="desig" required></th>
+                </tr>
+                <tr>
+                    <th><input type="number" placeholder="SALARY" name="sal" required></th>
+                </tr>
+                <tr>
+                    <th><input type="number" placeholder="CONTACT NO" name="cont" required></th>
+                </tr>
+                <tr>
+                    <th><input type="file"  name="img" required></th>
+                </tr>
+
+            </table>
+            <table align="center">
+                <th><button type="submit">Save
+                </button></th>
+            </table>
+
+        </form>
+        {{ mesg }}
+    <br>
+    <br>
+
+
+    <a href="/detailas/">
+        <h3 style="font-family:'High Tower Text'">
+            View All Staff Details
+        </h3>
+    </a>
+    </body>
+</html>

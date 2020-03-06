@@ -1,0 +1,37 @@
+<html>
+    <body>
+    <form method="post" action="/register/">
+        {% csrf_token %}
+    <table align="center">
+        <tr>
+            <th>Fill To Register</th>
+        </tr>
+        <tr>
+            <td><label>Idno</label></td>
+            <td><input type="number" name="idno" required></td>
+        </tr>
+        <tr>
+            <td><label>Name</label></td>
+            <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+            <td><label>Salary</label></td>
+            <td><input type="number" name="sal" required></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="rb" value="Manager">Manager</td>
+            <td><input type="radio" name="rb" value="Asst. Manager">Asst. Manager</td>
+            <td><input type="radio" name="rb" value="General Manager">General Manager</td>
+        </tr>
+        <tr>
+            <th><button type="submit">Register</button> </th>
+        </tr>
+    </table>
+        </form>
+    {{ message }}
+
+    <form action="{% url 'viewall' %}">
+        <button type="submit">View All Employees Details</button>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form method="post" action="/senddetails/">
+            {% csrf_token %}
+            <table align="center" border="2">
+                <tr>
+                    <th>
+                        Employee Details
+
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="t1" placeholder="IDNO" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="t2" placeholder="NAME" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="t3" placeholder="SALARY" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <button type="submit">send</button>
+                    </th>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>

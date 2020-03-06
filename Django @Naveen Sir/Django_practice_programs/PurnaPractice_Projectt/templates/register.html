@@ -1,0 +1,38 @@
+{% include 'reuse.html' %}
+
+<form action="/saveall/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<table>
+    <tr>
+        <th>Registration Page</th>
+    </tr>
+    <tr>
+        <td><input type="number" placeholder="IDNO" name="idno" required></td>
+    </tr>
+    <tr>
+        <td><input type="text" placeholder="NAME" name="name" required></td>
+    </tr>
+    <tr>
+        <td><input type="number" placeholder="SALARY" name="salary" required></td>
+    </tr>
+    <tr>
+        <td><input type="number" placeholder="CONTACT NO" name="contactno" required></td>
+    </tr>
+    <tr>
+        <td><input type="file" name="image"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="un" placeholder="USERNAME"></td>
+    </tr>
+    <tr>
+        <td><input type="password" name="up" placeholder="PASSWORD"></td>
+    </tr>
+    <tr>
+        <th><button type="submit">Register</button> </th>
+    </tr>
+</table>
+    </form>
+
+{% if msg %}
+{{ msg }}
+{% endif %}

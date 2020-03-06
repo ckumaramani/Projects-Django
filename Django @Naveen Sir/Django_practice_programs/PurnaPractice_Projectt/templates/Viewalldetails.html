@@ -1,0 +1,32 @@
+{% include 'reuse.html' %}
+
+
+<table>
+    <tr>
+        <th>Employee`s Details</th>
+    </tr>
+    <tr>
+        <th width="100">IDNO</th>
+        <th width="100">NAME</th>
+        <th width="100">SALARY</th>
+        <th width="100">CONTACT NO</th>
+        <th width="100">USERNAME</th>
+        <th width="100">IMAGE</th>
+        <th width="100">DELETE</th>
+    </tr>
+    {% for x in data %}
+        <tr>
+        <td>
+            <a href="/update{{ x.idno }}/" >{{ x.idno }}</a></td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.salary }}</td>
+        <td>{{ x.contactno }}</td>
+        <td>{{ x.username }}</td>
+        <td>
+            <img src="{{ x.image.url }}">
+        </td>
+        <td><button type="submit">Yes</button> </td>
+        </tr>
+    {% endfor %}
+
+</table>

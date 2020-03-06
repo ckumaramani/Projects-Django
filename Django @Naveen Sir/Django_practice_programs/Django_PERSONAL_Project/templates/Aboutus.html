@@ -1,0 +1,92 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>Arjun`s Group Of Companies</title>
+        <style>
+            body{
+                font-family: "Comic Sans MS" ;
+            }
+             header, footer{
+                text-align: center;
+                 margin: 0;
+                 color:cyan;
+            }
+            nav {
+                padding: 15px 25px;
+                background-color: gray;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+
+            }
+            nav a{
+                text-decoration:none ;
+                padding: 15px;
+            }
+            nav a:hover{
+                background-color: coral;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+                color: white;
+
+            }
+            div{
+            display: inline-block;
+            background-color:orangered;
+            padding: 10px 25px;
+            margin: 10px;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px black;
+        }
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Arjun`s Group Of Companies</h1>
+        <small>Quality Is Main Motive</small>
+    </header>
+    <nav>
+        <a href="{% url 'gohomepage' %}">Home</a>
+        <a href="{% url 'gologinpage' %}">Login</a>
+        <a href="{% url 'gobranchespage' %}">Branches</a>
+        <a href="{% url 'goaboutuspage' %}">About Us</a>
+        <a href="{% url 'gocontactuspage' %}">Contact Us</a>
+    </nav>
+
+
+
+
+
+
+  <div>
+        <h2>Our Motto:-</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+        dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod, sapiente, similique sint
+        totam vel?
+    </div>
+<div>
+    <h2>Customer`s Review:-</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+    dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod adipisicing elit
+</div>
+<div>
+    <h2>Achievements:-</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+    dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod, sapiente, similique sint
+    totam vel?
+</div>
+<div>
+    <h2>Why To join:-</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet architecto consequatur
+    dignissimos error facilis id laboriosam laudantium minima minus natus quia, quis quod, sapiente, similique sint
+    totam vel?
+</div>
+
+
+    <footer>
+        <h2>Copyright &copy; Reserved 2019</h2>
+        <h4>Website Maintained by </h4>
+        <small> <a href="https://www.google.com/" target="_blank">Mahe Infotech</a></small>
+    </footer>
+    </body>
+</html>

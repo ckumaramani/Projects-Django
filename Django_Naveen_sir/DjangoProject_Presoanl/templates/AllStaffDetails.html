@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<html>
+<body>
+
+
+
+   <table align="center">
+       <tr>
+           <th width="100">Id No.</th>
+           <th width="100">Name</th>
+           <th width="100">Contact No.</th>
+           <th width="100">Designation</th>
+           <th width="100">Username</th>
+       </tr>
+
+      {% for x in data %}
+       <tr>
+           <th width="100">{{ x.idno }}</th>
+           <th width="100">{{ x.name }}</th>
+           <th width="100">{{ x.contactno }}</th>
+           <th width="100">{{ x.designation }}</th>
+           <th width="100">{{ x.username }}</th>
+           <!------Image View Code---
+           <th width="100">
+               <a href="{{ x.image.url }}">
+                <img src="{{ x.image.url }}" width="100" height="100">
+               </a>
+           </th>
+           ----------->
+       </tr>
+       {% endfor %}
+   </table>
+
+</body>
+</html>

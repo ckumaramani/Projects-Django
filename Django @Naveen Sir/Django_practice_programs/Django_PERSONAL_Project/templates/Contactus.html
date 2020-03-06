@@ -1,0 +1,78 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>Arjun`s Group Of Companies</title>
+        <style>
+            body{
+                font-family: "Comic Sans MS" ;
+            }
+             header, footer{
+                text-align: center;
+                 margin: 0;
+                 color:cyan;
+            }
+            nav {
+                padding: 15px 25px;
+                background-color: gray;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+
+            }
+            nav a{
+                text-decoration:none ;
+                padding: 15px;
+            }
+            nav a:hover{
+                background-color: coral;
+                border-radius:15px ;
+                box-shadow: 0 0 10px black;
+                color: white;
+
+            }
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Arjun`s Group Of Companies</h1>
+        <small>Quality Is Main Motive</small>
+    </header>
+    <nav>
+        <a href="{% url 'gohomepage' %}">Home</a>
+        <a href="{% url 'gologinpage' %}">Login</a>
+        <a href="{% url 'gobranchespage' %}">Branches</a>
+        <a href="{% url 'goaboutuspage' %}">About Us</a>
+        <a href="{% url 'gohomepage' %}">Contact Us</a>
+    </nav>
+
+
+
+
+
+
+
+
+
+<P class="body">
+<strong >
+    <h2>Mahe Group of Hostels</h2>
+
+    Yellareddyguda,<br>
+    Near Ammerpet Metro Station,<br>
+    Contact No:987453210, 8885214796
+</strong>
+</P>
+
+
+
+
+
+    <footer>
+        <h2>Copyright &copy; Reserved 2019</h2>
+        <h4>Website Maintained by </h4>
+        <small> <a href="https://www.google.com/" target="_blank">Mahe Infotech</a></small>
+    </footer>
+    </body>
+</html>
